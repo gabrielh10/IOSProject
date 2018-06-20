@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+struct Question {
+    var id : Int
+    var question: String
+    var questionDetails: String
+    init (id: Int, question: String, questionDetails: String){
+        self.id = id
+        self.question = question
+        self.questionDetails = questionDetails
+    }
+}
