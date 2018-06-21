@@ -13,7 +13,7 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
     
     @IBOutlet weak var myTableView: UITableView!
     
-    var exQuestion = Question(id: 1, question: "How i do something ?", questionDetails: "Consider that i already try... ")
+    var exQuestion = Question(id: 1, question: "How i do something ?", questionDetails: "Consider that i already try doing this like... ")
     var exQuestion1 = Question(id: 2, question: "How i do something ?", questionDetails: "Consider that i already try... ")
     var exQuestion2 = Question(id: 3, question: "How i do something ?", questionDetails: "Consider that i already try... ")
     var exQuestion3 = Question(id: 4, question: "How i do something ?", questionDetails: "Consider that i already try... ")
@@ -51,5 +51,17 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         return 100
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // Segue to the second view controller
+        self.performSegue(withIdentifier: "segueToAnswers", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // get a reference to the second view controller
+        let answersViewController = segue.destination as! AnswersViewController
+        
+        // set a variable in the second view controller with the data to pass
+        answersViewController.question = exQuestion
+    }
 }
 

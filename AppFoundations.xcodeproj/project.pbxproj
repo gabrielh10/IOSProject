@@ -16,6 +16,7 @@
 		E3A652C820DA91A200928215 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3A652C620DA91A200928215 /* LaunchScreen.storyboard */; };
 		E3A652D320DA91A200928215 /* AppFoundationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A652D220DA91A200928215 /* AppFoundationsTests.swift */; };
 		E3A652DE20DA91A200928215 /* AppFoundationsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A652DD20DA91A200928215 /* AppFoundationsUITests.swift */; };
+		E3F09EA920DBE47200716747 /* AnswersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F09EA820DBE47200716747 /* AnswersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		E3A652D920DA91A200928215 /* AppFoundationsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppFoundationsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3A652DD20DA91A200928215 /* AppFoundationsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFoundationsUITests.swift; sourceTree = "<group>"; };
 		E3A652DF20DA91A200928215 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3F09EA820DBE47200716747 /* AnswersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				E3A652C620DA91A200928215 /* LaunchScreen.storyboard */,
 				E3A652C920DA91A200928215 /* Info.plist */,
 				E35ACCC420DA9A7E00DA01FA /* Question.swift */,
+				E3F09EA820DBE47200716747 /* AnswersViewController.swift */,
 			);
 			path = AppFoundations;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				E35ACCC520DA9A7E00DA01FA /* Question.swift in Sources */,
 				E3A652BE20DA91A200928215 /* AppDelegate.swift in Sources */,
 				E35ACCC320DA975D00DA01FA /* MyTableCell.swift in Sources */,
+				E3F09EA920DBE47200716747 /* AnswersViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
