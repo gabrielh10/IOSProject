@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -120,11 +121,64 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.98366612200000003" green="0.86129409069999996" blue="0.66318064929999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yI3-bE-ANk">
+                                <rect key="frame" x="0.0" y="257" width="375" height="410"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AnswersCell" rowHeight="140" id="9Lb-6E-lBl" customClass="AnswersTableCell" customModule="AppFoundations" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="140"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9Lb-6E-lBl" id="6iS-rI-B9m">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="139.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pnu-95-wxk">
+                                                    <rect key="frame" x="37" y="11" width="259" height="78"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oen-wH-KrN">
+                                                    <rect key="frame" x="349" y="74" width="11" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="left" contentVerticalAlignment="top" autorepeat="NO" maximumValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="S09-J0-1Y5">
+                                                    <rect key="frame" x="266" y="98" width="94" height="29"/>
+                                                    <rect key="contentStretch" x="1" y="0.0" width="0.0" height="1"/>
+                                                    <connections>
+                                                        <action selector="Scorizador:" destination="9Lb-6E-lBl" eventType="valueChanged" id="77b-t5-b2C"/>
+                                                    </connections>
+                                                </stepper>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="oen-wH-KrN" firstAttribute="trailing" secondItem="6iS-rI-B9m" secondAttribute="trailingMargin" id="By7-ND-xMW"/>
+                                                <constraint firstItem="S09-J0-1Y5" firstAttribute="top" secondItem="oen-wH-KrN" secondAttribute="bottom" constant="3" id="GnB-R6-PH7"/>
+                                                <constraint firstItem="S09-J0-1Y5" firstAttribute="trailing" secondItem="6iS-rI-B9m" secondAttribute="trailingMargin" id="L1Y-gK-3nv"/>
+                                                <constraint firstItem="S09-J0-1Y5" firstAttribute="bottom" secondItem="6iS-rI-B9m" secondAttribute="bottomMargin" constant="-2" id="POg-e9-h9z"/>
+                                                <constraint firstItem="S09-J0-1Y5" firstAttribute="top" secondItem="oen-wH-KrN" secondAttribute="bottom" constant="3" id="bce-nu-XIR"/>
+                                                <constraint firstItem="S09-J0-1Y5" firstAttribute="trailing" secondItem="6iS-rI-B9m" secondAttribute="trailingMargin" id="pzv-5h-Q3e"/>
+                                                <constraint firstItem="S09-J0-1Y5" firstAttribute="top" secondItem="oen-wH-KrN" secondAttribute="bottom" constant="3" id="t82-Ku-9Ir"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.98366612200000003" green="0.86129409069999996" blue="0.66318064929999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="answer" destination="pnu-95-wxk" id="iPz-qE-KDK"/>
+                                            <outlet property="score" destination="oen-wH-KrN" id="LaG-iN-nP5"/>
+                                            <outlet property="stepper" destination="S09-J0-1Y5" id="JsS-Fn-DJC"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <viewLayoutGuide key="safeArea" id="EjD-ci-mhd"/>
                     </view>
                     <connections>
+                        <outlet property="answersTableView" destination="yI3-bE-ANk" id="iQR-SJ-lyZ"/>
                         <outlet property="questionDetailsSelected" destination="q7x-VD-hET" id="Vq1-sN-6xf"/>
                         <outlet property="questionSelected" destination="Y6c-Y0-Vt7" id="EDQ-AM-OEv"/>
                     </connections>
@@ -134,4 +188,5 @@
             <point key="canvasLocation" x="903.20000000000005" y="132.68365817091455"/>
         </scene>
     </scenes>
+    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>
