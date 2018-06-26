@@ -8,8 +8,11 @@
                             //verificar utilizacao de structs ou classes pra salvar as respostas de forma a permitir modificar o score
 import Foundation
 
-public struct Answers {
-    static let sharedInstance = Answers()
+final class Answers {
+    
+    private init(){}
+    
+    static let shared = Answers()
     
     var list: [Answer] = []
     
@@ -17,7 +20,7 @@ public struct Answers {
         return list.count
     }
     
-    public mutating func add (answer:Answer){
+    public func add (answer:Answer){
         list.append(answer)
     }
     public func getByQuestionId (id : Int) -> [Answer]{
@@ -29,22 +32,29 @@ public struct Answers {
         }
         return listOfAnswers
     }
-    
-/*    public func attScore (idAnswer:Int, newScore:Int){
-    for el in Answers.sharedInstance.list{
-        if(el.id == idAnswer){
-            el.score = newScore
+ 
+    public func attScore (idAnswer:Int, newScore:Int){
+        for el in Answers.shared.list{
+            if(el.id == idAnswer){
+                el.attScore(newScore: newScore)
         }
     }
 }
-    */
- /*   public static func getById(id : Int) -> Answer{
-        for el in list {
+    public func getScoreByID(idAnswer:Int) -> Int{
+        for el in Answers.shared.list{
+            if(el.id == idAnswer){
+                return el.score
+            }
+        }
+        return 0
+    }
+  
+    public static func getById(id : Int) -> Answer?{
+        for el in Answers.shared.list {
             if(el.id == id){
                 return el
             }
         }
-        
+        return nil
     }
-   */
     }

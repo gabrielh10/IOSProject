@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct Answer {
+public class Answer {
     var id : Int
     var answer : String
     var score : Int
@@ -21,7 +21,7 @@ public struct Answer {
         self.idQuestion = idQuestion
     }
     
-    mutating func attScore(newScore:Int){
+    func attScore(newScore:Int){
         score = newScore
     }
 }

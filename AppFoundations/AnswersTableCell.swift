@@ -17,6 +17,8 @@ class AnswersTableCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        let oldScore = Answers.shared.getScoreByID(idAnswer: id)
+        score.text = String(oldScore)
         // Initialization code
     }
 
@@ -27,7 +29,10 @@ class AnswersTableCell: UITableViewCell {
     }
 
     @IBAction func Scorizador(_ sender: UIStepper) {
-        score.text = String(Int(sender.value))
- //       Answers.getById(id: id).attScore(Int(sender.value))      Irá ser modificado pra guardar na struct
+          var myScore = Int(sender.value)
+          Answers.shared.attScore(idAnswer: id, newScore: myScore)
+        
+          let newScore = Answers.shared.getScoreByID(idAnswer: id)
+          score.text = String(newScore)
     }
 }

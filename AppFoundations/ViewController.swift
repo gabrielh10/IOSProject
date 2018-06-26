@@ -13,11 +13,11 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
     
     @IBOutlet weak var myTableView: UITableView!
     
-    var exQuestion = Question(id: 1, question: "How i do something ?", questionDetails: "Consider that i already try doing this like... ")
-    var exQuestion1 = Question(id: 2, question: "How i do something ?", questionDetails: "Consider that i already try... ")
-    var exQuestion2 = Question(id: 3, question: "How i do something ?", questionDetails: "Consider that i already try... ")
-    var exQuestion3 = Question(id: 4, question: "How i do something ?", questionDetails: "Consider that i already try... ")
-    var exQuestion4 = Question(id: 5, question: "How i do something ?", questionDetails: "Consider that i already try... ")
+    var exQuestion = Question(id: 1, question: "1How i do something ?", questionDetails: "Consider that i already try doing this like... ")
+    var exQuestion1 = Question(id: 2, question: "2How i do something ?", questionDetails: "Consider that i already try... ")
+    var exQuestion2 = Question(id: 3, question: "3How i do something ?", questionDetails: "Consider that i already try... ")
+    var exQuestion3 = Question(id: 4, question: "4How i do something ?", questionDetails: "Consider that i already try... ")
+    var exQuestion4 = Question(id: 5, question: "5How i do something ?", questionDetails: "Consider that i already try... ")
     
     lazy var questions : [Question] = [exQuestion, exQuestion1, exQuestion2, exQuestion3, exQuestion4]
     
@@ -60,8 +60,10 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         // get a reference to the second view controller
         let answersViewController = segue.destination as! AnswersViewController
         
+        if let teste = self.myTableView.indexPathForSelectedRow?.row{
         // set a variable in the second view controller with the data to pass
-        answersViewController.question = exQuestion
+            answersViewController.question = questions[teste]
+        }
     }
 }
 
