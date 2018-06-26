@@ -56,8 +56,12 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         self.performSegue(withIdentifier: "segueToAnswers", sender: self)
     }
     
+    @IBAction func SegueToWriteQuestion(_ sender: Any) {
+        performSegue(withIdentifier: "SegueToWriteQuestion", sender: sender)
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // get a reference to the second view controller
+    if(segue.identifier == "segueToAnswers"){
         let answersViewController = segue.destination as! AnswersViewController
         
         if let teste = self.myTableView.indexPathForSelectedRow?.row{
@@ -65,5 +69,6 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
             answersViewController.question = questions[teste]
         }
     }
-}
+    }
 
+}
