@@ -8,11 +8,16 @@
 
 import UIKit
 
-class WriteQuestionViewController: UIViewController {
+class WriteQuestionViewController: UIViewController{
 
+    @IBOutlet weak var questionDetails: UITextView!
+    @IBOutlet weak var question: UITextField!
+    
+    var newQuestion = Question(id: 0, question: "", questionDetails: "")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+   
         // Do any additional setup after loading the view.
     }
 
@@ -32,4 +37,16 @@ class WriteQuestionViewController: UIViewController {
     }
     */
 
+    @IBAction func onClick(_ sender: Any) {
+        newQuestion = Question(id: Questions.shared.count+1, question: question.text!, questionDetails: questionDetails.text)
+        Questions.shared.add(question: newQuestion)
+        self.performSegue(withIdentifier: "SegueNewQuestionToAnswers", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "SegueNewQuestionToAnswers"){
+            let answersViewController = segue.destination as! AnswersViewController
+            answersViewController.question = newQuestion
+        }
+    }
 }

@@ -198,10 +198,10 @@
             </objects>
             <point key="canvasLocation" x="903.20000000000005" y="132.68365817091455"/>
         </scene>
-        <!--View Controller-->
+        <!--Write Question View Controller-->
         <scene sceneID="FXg-Lz-GwP">
             <objects>
-                <viewController id="rZo-Fs-QF1" sceneMemberID="viewController">
+                <viewController id="rZo-Fs-QF1" customClass="WriteQuestionViewController" customModule="AppFoundations" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WaK-62-9zb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -213,32 +213,38 @@
                                 <color key="textColor" red="0.99007517099999998" green="0.75296825170000004" blue="0.30333316329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pTb-Nm-jqK">
-                                <rect key="frame" x="0.0" y="70" width="375" height="138"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TRG-Eq-VPc">
+                                <rect key="frame" x="270" y="471" width="69" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Qual a sua dúvida ?" borderStyle="bezel" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yOG-Aj-CKk">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="31"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.98366612200000003" green="0.86129409069999996" blue="0.66318064929999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Compartilhe mais detalhes aqui" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HJy-uM-rpF">
-                                        <rect key="frame" x="0.0" y="39" width="375" height="99"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.98366612200000003" green="0.86129409069999996" blue="0.66318064929999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                </subviews>
+                                <state key="normal" image="enviar_icon"/>
+                                <connections>
+                                    <action selector="onClick:" destination="rZo-Fs-QF1" eventType="touchUpInside" id="AVs-u2-Wd7"/>
+                                    <segue destination="5qd-vE-RNM" kind="show" identifier="SegueNewQuestionToAnswers" id="fCj-bC-A3v"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Qual a sua dúvida ?" borderStyle="bezel" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yOG-Aj-CKk">
+                                <rect key="frame" x="0.0" y="92" width="375" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.98366612200000003" green="0.86129409069999996" blue="0.66318064929999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Compartilhe mais detalhes aqui" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HJy-uM-rpF">
+                                <rect key="frame" x="0.0" y="123" width="375" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.98366612200000003" green="0.86129409069999996" blue="0.66318064929999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="LcE-wC-sgi"/>
                     </view>
+                    <connections>
+                        <outlet property="question" destination="yOG-Aj-CKk" id="0Bt-jq-qF8"/>
+                        <outlet property="questionDetails" destination="HJy-uM-rpF" id="hUw-5c-2Oz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Oj-rx-leY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -246,7 +252,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="enviar_icon" width="128" height="146"/>
         <image name="nautico" width="225" height="225"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="fCj-bC-A3v"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

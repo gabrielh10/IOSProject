@@ -21,8 +21,17 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
     
     lazy var questions : [Question] = [exQuestion, exQuestion1, exQuestion2, exQuestion3, exQuestion4]
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        Questions.shared.add(question: exQuestion)
+        Questions.shared.add(question: exQuestion1)
+        Questions.shared.add(question: exQuestion2)
+        Questions.shared.add(question: exQuestion3)
+        Questions.shared.add(question: exQuestion4)
+
         
         myTableView.delegate = self
         myTableView.dataSource = self
@@ -35,14 +44,18 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return questions.count
+      //  return questions.count
+        return Questions.shared.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath) as! MyTableCell
-        
+    /*
         cell.question.text = questions[indexPath.row].question
         cell.questionDetails.text = questions[indexPath.row].questionDetails
+      */
+        cell.question.text = Questions.shared.list[indexPath.row].question
+        cell.questionDetails.text = Questions.shared.list[indexPath.row].questionDetails
         
         return cell
     }
