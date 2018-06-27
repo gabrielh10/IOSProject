@@ -22,4 +22,13 @@ final class Questions {
     public func add (question:Question){
         list.append(question)
     }
+    
+    public func getQuestionByID (idQuestion : Int) -> Question?{
+        for el in Questions.shared.list{
+            if(el.id == idQuestion){
+                return el
+            }
+        }
+        return nil
+    }
 }

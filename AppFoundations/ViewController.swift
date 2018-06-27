@@ -18,6 +18,8 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
     var exQuestion2 = Question(id: 3, question: "3How i do something ?", questionDetails: "Consider that i already try... ")
     var exQuestion3 = Question(id: 4, question: "4How i do something ?", questionDetails: "Consider that i already try... ")
     var exQuestion4 = Question(id: 5, question: "5How i do something ?", questionDetails: "Consider that i already try... ")
+    var exQuestion5 = Question(id: 6, question: "6How i do something ?", questionDetails: "Consider that i already try... ")
+    var exQuestion6 = Question(id: 7, question: "7How i do something ?", questionDetails: "Consider that i already try... ")
     
     lazy var questions : [Question] = [exQuestion, exQuestion1, exQuestion2, exQuestion3, exQuestion4]
     
@@ -31,6 +33,8 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         Questions.shared.add(question: exQuestion2)
         Questions.shared.add(question: exQuestion3)
         Questions.shared.add(question: exQuestion4)
+        Questions.shared.add(question: exQuestion5)
+        Questions.shared.add(question: exQuestion6)
 
         
         myTableView.delegate = self
@@ -70,6 +74,9 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
     }
     
     @IBAction func SegueToWriteQuestion(_ sender: Any) {
+        performSegue(withIdentifier: "SegueToWriteQuestion", sender: sender)
+    }
+    @IBAction func onClickButton(_ sender: Any) {
         performSegue(withIdentifier: "SegueToWriteQuestion", sender: sender)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

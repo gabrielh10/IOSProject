@@ -13,6 +13,7 @@
 		E35ACCC320DA975D00DA01FA /* MyTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35ACCC220DA975D00DA01FA /* MyTableCell.swift */; };
 		E35ACCC520DA9A7E00DA01FA /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35ACCC420DA9A7E00DA01FA /* Question.swift */; };
 		E3933E0220E3B09700D8484D /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3933E0120E3B09700D8484D /* Questions.swift */; };
+		E3933E0420E3C61B00D8484D /* NewAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3933E0320E3C61B00D8484D /* NewAnswerViewController.swift */; };
 		E3A652BE20DA91A200928215 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A652BD20DA91A200928215 /* AppDelegate.swift */; };
 		E3A652C020DA91A200928215 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A652BF20DA91A200928215 /* ViewController.swift */; };
 		E3A652C320DA91A200928215 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3A652C120DA91A200928215 /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 		E35ACCC220DA975D00DA01FA /* MyTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableCell.swift; sourceTree = "<group>"; };
 		E35ACCC420DA9A7E00DA01FA /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		E3933E0120E3B09700D8484D /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
+		E3933E0320E3C61B00D8484D /* NewAnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAnswerViewController.swift; sourceTree = "<group>"; };
 		E3A652BA20DA91A200928215 /* AppFoundations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppFoundations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3A652BD20DA91A200928215 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3A652BF20DA91A200928215 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				E30BF33820E107CB004F5E9E /* AnswersTableCell.swift */,
 				E3DA979B20E27F5E00D34A8A /* WriteQuestionViewController.swift */,
 				E3933E0120E3B09700D8484D /* Questions.swift */,
+				E3933E0320E3C61B00D8484D /* NewAnswerViewController.swift */,
 			);
 			path = AppFoundations;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				E30BF33D20E10E21004F5E9E /* Answers.swift in Sources */,
 				E30BF33B20E10B56004F5E9E /* Answer.swift in Sources */,
 				E3A652BE20DA91A200928215 /* AppDelegate.swift in Sources */,
+				E3933E0420E3C61B00D8484D /* NewAnswerViewController.swift in Sources */,
 				E35ACCC320DA975D00DA01FA /* MyTableCell.swift in Sources */,
 				E3F09EA920DBE47200716747 /* AnswersViewController.swift in Sources */,
 			);

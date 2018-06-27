@@ -98,12 +98,12 @@ class AnswersViewController: UIViewController, UITableViewDelegate, UITableViewD
         let cell = tableView.dequeueReusableCell(withIdentifier: "AnswersCell", for: indexPath) as! AnswersTableCell
         
 //        var answersShowed = Answers.getById(id: question.id)
-        
         cell.id = Answers.shared.getByQuestionId(id : question.id)[indexPath.row].id
        // cell.answer.text = answersShowed[indexPath.row].answer
         cell.answer.text = Answers.shared.getByQuestionId(id : question.id)[indexPath.row].answer
         
         return cell
+
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -111,7 +111,18 @@ class AnswersViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     
-
+    @IBAction func onClick(_ sender: Any) {
+        self.performSegue(withIdentifier: "SegueAnswersToNewAnswer", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "SegueAnswersToNewAnswer"){
+            let newAnswerViewController = segue.destination as! NewAnswerViewController
+            newAnswerViewController.idQuestion = question.id
+            newAnswerViewController.question1 = question.question
+            newAnswerViewController.questionDetail1 = question.questionDetails
+        }
+    }
     /*
     // MARK: - Navigation
 
