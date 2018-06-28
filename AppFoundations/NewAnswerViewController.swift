@@ -7,29 +7,33 @@
 //
 
 import UIKit
-
+//VERIFICAR ESSA CLASSE, OBJETO ANSWER RETORNANDO NULO
 class NewAnswerViewController: UIViewController {
     @IBOutlet weak var question: UILabel!
     var idQuestion = 0
     var question1 = ""
     var questionDetail1 = ""
+    //   @IBOutlet weak var newAnswer: UITextView!
     @IBOutlet weak var newAnswer: UITextView!
     @IBOutlet weak var questionDetail: UILabel!
     @IBAction func onClick(_ sender: Any) {
-        var answer = Answer(id: Answers.shared.list.count+1, answer: newAnswer.text!, score: 0, idQuestion: idQuestion)
+        if let teste = newAnswer.text{
+        var answer = Answer(id: Answers.shared.list.count+1, answer: newAnswer.text, score: 0, idQuestion: idQuestion)
         Answers.shared.add(answer: answer)
         
         self.performSegue(withIdentifier: "SegueNewAnswerToAnswers", sender: self)
-        
+        }
+        print("deu erro")
     }
     
-/*    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "SegueNewAnswerToAnswers"){
             let answersViewController = segue.destination as! AnswersViewController
-            
+            let myQuestion = Question(id: idQuestion, question: question1, questionDetails: questionDetail1)
+             answersViewController.question = myQuestion
         }
     }
-  */
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         question.text = question1

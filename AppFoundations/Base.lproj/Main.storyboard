@@ -317,6 +317,7 @@
                         <viewLayoutGuide key="safeArea" id="9TP-JA-qnE"/>
                     </view>
                     <connections>
+                        <outlet property="newAnswer" destination="vUl-Vc-2QL" id="I3a-a4-W7J"/>
                         <outlet property="question" destination="bdK-Cw-aLL" id="fXI-7h-Fsj"/>
                         <outlet property="questionDetail" destination="GxI-VP-a14" id="Jxw-6A-X0L"/>
                     </connections>
@@ -332,7 +333,7 @@
         <image name="voltar_icon" width="119" height="139"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="IfE-2y-gp3"/>
+        <segue reference="f3f-6J-pCG"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>
