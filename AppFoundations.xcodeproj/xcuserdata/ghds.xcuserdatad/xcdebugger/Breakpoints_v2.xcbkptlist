@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AppFoundations/Answers.swift"
-            timestampString = "551883261.392031"
+            timestampString = "551887065.2367769"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "52"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AppFoundations/AnswersViewController.swift"
-            timestampString = "551883261.392512"
+            timestampString = "551887065.237134"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "73"
@@ -138,7 +138,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AppFoundations/AnswersViewController.swift"
-            timestampString = "551883261.392709"
+            timestampString = "551887065.237272"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "101"
@@ -154,7 +154,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AppFoundations/AnswersViewController.swift"
-            timestampString = "551883261.3927701"
+            timestampString = "551887065.237318"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "103"
@@ -234,7 +234,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AppFoundations/Answers.swift"
-            timestampString = "551883261.39291"
+            timestampString = "551887065.2374099"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "46"
@@ -250,7 +250,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AppFoundations/AnswersViewController.swift"
-            timestampString = "551883261.393352"
+            timestampString = "551887065.237643"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "122"
@@ -266,7 +266,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AppFoundations/AnswersViewController.swift"
-            timestampString = "551883261.393456"
+            timestampString = "551887065.237691"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "123"
@@ -282,7 +282,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AppFoundations/NewAnswerViewController.swift"
-            timestampString = "551883261.393545"
+            timestampString = "551887065.2377371"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "20"
@@ -298,13 +298,106 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AppFoundations/NewAnswerViewController.swift"
-            timestampString = "551883261.394255"
+            timestampString = "551887065.238125"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "22"
             endingLineNumber = "22"
             landmarkName = "onClick(_:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AppFoundations/NewAnswerViewController.swift"
+            timestampString = "551888274.091571"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1"
+            endingLineNumber = "1"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppFoundations.NewAnswerViewController.__deallocating_deinit"
+                  moduleName = "AppFoundations"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ghds/Desktop/AppFoundations/AppFoundations/NewAnswerViewController.swift"
+                  timestampString = "551888274.822057"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppFoundations.NewAnswerViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; AppFoundations.NewAnswerViewController"
+                  moduleName = "AppFoundations"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ghds/Desktop/AppFoundations/AppFoundations/NewAnswerViewController.swift"
+                  timestampString = "551888274.8263741"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppFoundations.NewAnswerViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; AppFoundations.NewAnswerViewController"
+                  moduleName = "AppFoundations"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ghds/Desktop/AppFoundations/AppFoundations/NewAnswerViewController.swift"
+                  timestampString = "551888274.828657"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "77">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppFoundations.NewAnswerViewController.__allocating_init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;AppFoundations.NewAnswerViewController&gt;"
+                  moduleName = "AppFoundations"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ghds/Desktop/AppFoundations/AppFoundations/NewAnswerViewController.swift"
+                  timestampString = "551888274.830585"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppFoundations.NewAnswerViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;AppFoundations.NewAnswerViewController&gt;"
+                  moduleName = "AppFoundations"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ghds/Desktop/AppFoundations/AppFoundations/NewAnswerViewController.swift"
+                  timestampString = "551888274.832468"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "47">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

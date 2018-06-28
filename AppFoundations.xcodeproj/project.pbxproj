@@ -22,6 +22,8 @@
 		E3A652D320DA91A200928215 /* AppFoundationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A652D220DA91A200928215 /* AppFoundationsTests.swift */; };
 		E3A652DE20DA91A200928215 /* AppFoundationsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A652DD20DA91A200928215 /* AppFoundationsUITests.swift */; };
 		E3DA979C20E27F5E00D34A8A /* WriteQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DA979B20E27F5E00D34A8A /* WriteQuestionViewController.swift */; };
+		E3DEFC6120E51D2200497CAF /* ComunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DEFC6020E51D2200497CAF /* ComunityViewController.swift */; };
+		E3DEFC6320E51D4000497CAF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DEFC6220E51D4000497CAF /* ProfileViewController.swift */; };
 		E3F09EA920DBE47200716747 /* AnswersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F09EA820DBE47200716747 /* AnswersViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +66,8 @@
 		E3A652DD20DA91A200928215 /* AppFoundationsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFoundationsUITests.swift; sourceTree = "<group>"; };
 		E3A652DF20DA91A200928215 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3DA979B20E27F5E00D34A8A /* WriteQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteQuestionViewController.swift; sourceTree = "<group>"; };
+		E3DEFC6020E51D2200497CAF /* ComunityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComunityViewController.swift; sourceTree = "<group>"; };
+		E3DEFC6220E51D4000497CAF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		E3F09EA820DBE47200716747 /* AnswersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,6 +123,8 @@
 				E3A652BF20DA91A200928215 /* ViewController.swift */,
 				E35ACCC220DA975D00DA01FA /* MyTableCell.swift */,
 				E3A652C120DA91A200928215 /* Main.storyboard */,
+				E3DEFC6220E51D4000497CAF /* ProfileViewController.swift */,
+				E3DEFC6020E51D2200497CAF /* ComunityViewController.swift */,
 				E3A652C420DA91A200928215 /* Assets.xcassets */,
 				E3A652C620DA91A200928215 /* LaunchScreen.storyboard */,
 				E3A652C920DA91A200928215 /* Info.plist */,
@@ -288,6 +294,7 @@
 			files = (
 				E3A652C020DA91A200928215 /* ViewController.swift in Sources */,
 				E35ACCC520DA9A7E00DA01FA /* Question.swift in Sources */,
+				E3DEFC6120E51D2200497CAF /* ComunityViewController.swift in Sources */,
 				E30BF33920E107CC004F5E9E /* AnswersTableCell.swift in Sources */,
 				E3933E0220E3B09700D8484D /* Questions.swift in Sources */,
 				E3DA979C20E27F5E00D34A8A /* WriteQuestionViewController.swift in Sources */,
@@ -295,6 +302,7 @@
 				E30BF33B20E10B56004F5E9E /* Answer.swift in Sources */,
 				E3A652BE20DA91A200928215 /* AppDelegate.swift in Sources */,
 				E3933E0420E3C61B00D8484D /* NewAnswerViewController.swift in Sources */,
+				E3DEFC6320E51D4000497CAF /* ProfileViewController.swift in Sources */,
 				E35ACCC320DA975D00DA01FA /* MyTableCell.swift in Sources */,
 				E3F09EA920DBE47200716747 /* AnswersViewController.swift in Sources */,
 			);
