@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		016B3AF120E65A0F00A9A6BB /* Comunity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B3AF020E65A0F00A9A6BB /* Comunity.swift */; };
+		016B3AF320E65A2C00A9A6BB /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B3AF220E65A2C00A9A6BB /* Profile.swift */; };
+		016B3AF520E65A5000A9A6BB /* Knowledge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B3AF420E65A5000A9A6BB /* Knowledge.swift */; };
+		016B3AF720E65A6D00A9A6BB /* UsingDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B3AF620E65A6D00A9A6BB /* UsingDefaults.swift */; };
 		E30BF33920E107CC004F5E9E /* AnswersTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30BF33820E107CB004F5E9E /* AnswersTableCell.swift */; };
 		E30BF33B20E10B56004F5E9E /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30BF33A20E10B56004F5E9E /* Answer.swift */; };
 		E30BF33D20E10E21004F5E9E /* Answers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30BF33C20E10E21004F5E9E /* Answers.swift */; };
@@ -45,6 +49,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		016B3AF020E65A0F00A9A6BB /* Comunity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comunity.swift; sourceTree = "<group>"; };
+		016B3AF220E65A2C00A9A6BB /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		016B3AF420E65A5000A9A6BB /* Knowledge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Knowledge.swift; sourceTree = "<group>"; };
+		016B3AF620E65A6D00A9A6BB /* UsingDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingDefaults.swift; sourceTree = "<group>"; };
 		E30BF33820E107CB004F5E9E /* AnswersTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswersTableCell.swift; sourceTree = "<group>"; };
 		E30BF33A20E10B56004F5E9E /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		E30BF33C20E10E21004F5E9E /* Answers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answers.swift; sourceTree = "<group>"; };
@@ -136,6 +144,10 @@
 				E3DA979B20E27F5E00D34A8A /* WriteQuestionViewController.swift */,
 				E3933E0120E3B09700D8484D /* Questions.swift */,
 				E3933E0320E3C61B00D8484D /* NewAnswerViewController.swift */,
+				016B3AF020E65A0F00A9A6BB /* Comunity.swift */,
+				016B3AF220E65A2C00A9A6BB /* Profile.swift */,
+				016B3AF420E65A5000A9A6BB /* Knowledge.swift */,
+				016B3AF620E65A6D00A9A6BB /* UsingDefaults.swift */,
 			);
 			path = AppFoundations;
 			sourceTree = "<group>";
@@ -293,13 +305,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3A652C020DA91A200928215 /* ViewController.swift in Sources */,
+				016B3AF320E65A2C00A9A6BB /* Profile.swift in Sources */,
 				E35ACCC520DA9A7E00DA01FA /* Question.swift in Sources */,
 				E3DEFC6120E51D2200497CAF /* ComunityViewController.swift in Sources */,
 				E30BF33920E107CC004F5E9E /* AnswersTableCell.swift in Sources */,
 				E3933E0220E3B09700D8484D /* Questions.swift in Sources */,
+				016B3AF120E65A0F00A9A6BB /* Comunity.swift in Sources */,
 				E3DA979C20E27F5E00D34A8A /* WriteQuestionViewController.swift in Sources */,
+				016B3AF720E65A6D00A9A6BB /* UsingDefaults.swift in Sources */,
 				E30BF33D20E10E21004F5E9E /* Answers.swift in Sources */,
 				E30BF33B20E10B56004F5E9E /* Answer.swift in Sources */,
+				016B3AF520E65A5000A9A6BB /* Knowledge.swift in Sources */,
 				E3A652BE20DA91A200928215 /* AppDelegate.swift in Sources */,
 				E3933E0420E3C61B00D8484D /* NewAnswerViewController.swift in Sources */,
 				E3DEFC6320E51D4000497CAF /* ProfileViewController.swift in Sources */,

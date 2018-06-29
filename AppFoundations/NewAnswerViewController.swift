@@ -13,17 +13,26 @@ class NewAnswerViewController: UIViewController {
     var idQuestion = 0
     var question1 = ""
     var questionDetail1 = ""
+    var answer:Answer? = nil
+    var answers:[Answer] = []
     //   @IBOutlet weak var newAnswer: UITextView!
     @IBOutlet weak var newAnswer: UITextView!
     @IBOutlet weak var questionDetail: UILabel!
     @IBAction func onClick(_ sender: Any) {
-        if let teste = newAnswer.text{
-        var answer = Answer(id: Answers.shared.list.count+1, answer: newAnswer.text, score: 0, idQuestion: idQuestion)
-        Answers.shared.add(answer: answer)
         
-        self.performSegue(withIdentifier: "SegueNewAnswerToAnswers", sender: self)
+        if let savedAnswers = UsingDefaults.loadFromDefaults(key: "answers", objType: [Answer].self) as? [Answer]{
+            answers = savedAnswers
         }
-        print("deu erro")
+        
+        if newAnswer.text != ""{
+            answer = Answer(id: Answers.shared.list.count+1, answer: newAnswer.text, score: 0, idQuestion: idQuestion)
+            Answers.shared.add(answer: answer!)
+            answers.append(answer!)
+            self.performSegue(withIdentifier: "SegueNewAnswerToAnswers", sender: self)
+        }
+        
+        UsingDefaults.saveToDefaults(key: "answers", obj: answers)
+        
     }
     
    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

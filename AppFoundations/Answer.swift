@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class Answer {
+public class Answer: Codable {
     var id : Int
     var answer : String
     var score : Int

@@ -12,7 +12,7 @@ class WriteQuestionViewController: UIViewController{
 
     @IBOutlet weak var questionDetails: UITextView!
     @IBOutlet weak var question: UITextField!
-    
+    var questions:[Question] = []
     var newQuestion = Question(id: 0, question: "", questionDetails: "")
     
     override func viewDidLoad() {
@@ -25,22 +25,19 @@ class WriteQuestionViewController: UIViewController{
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
     @IBAction func onClick(_ sender: Any) {
+        if let savedQuestions = UsingDefaults.loadFromDefaults(key: "questions", objType: [Question].self) as? [Question]{
+            questions = savedQuestions
+        }
+        
         newQuestion = Question(id: Questions.shared.count+1, question: question.text!, questionDetails: questionDetails.text)
         Questions.shared.add(question: newQuestion)
         self.performSegue(withIdentifier: "SegueNewQuestionToAnswers", sender: self)
+        
+        questions.append(newQuestion)
+        UsingDefaults.saveToDefaults(key: "questions", obj: questions)
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

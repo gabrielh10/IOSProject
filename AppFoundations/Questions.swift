@@ -8,7 +8,7 @@
 
 import Foundation
 
-final class Questions {
+final class Questions:Codable {
     private init(){}
     
     static let shared = Questions()

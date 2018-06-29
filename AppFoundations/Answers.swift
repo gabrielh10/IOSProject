@@ -8,7 +8,7 @@
                             //verificar utilizacao de structs ou classes pra salvar as respostas de forma a permitir modificar o score
 import Foundation
 
-final class Answers {
+final class Answers: Codable {
     
     private init(){}
     
