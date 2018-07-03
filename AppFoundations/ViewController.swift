@@ -128,6 +128,9 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        if let savedQuestions = UsingDefaults.loadFromDefaults(key: "questions", objType: [Question].self) as? [Question]{
+            questions = savedQuestions
+        }
        myTableView.reloadData()
     }
 
@@ -175,6 +178,8 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         
         if let index = self.myTableView.indexPathForSelectedRow?.row{
         // set a variable in the second view controller with the data to pass
+    //        print("Valor do index", index)
+    //        print("tamanho do array", questions.count)
             answersViewController.question = questions[index]
         }
     }

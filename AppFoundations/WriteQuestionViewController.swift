@@ -33,7 +33,7 @@ class WriteQuestionViewController: UIViewController{
         
         newQuestion = Question(id: Questions.shared.count+1, question: question.text!, questionDetails: questionDetails.text)
         Questions.shared.add(question: newQuestion)
-        self.performSegue(withIdentifier: "SegueNewQuestionToAnswers", sender: self)
+ //       self.performSegue(withIdentifier: "SegueNewQuestionToAnswers", sender: self)
         
         questions.append(newQuestion)
         UsingDefaults.saveToDefaults(key: "questions", obj: questions)
