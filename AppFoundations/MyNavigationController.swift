@@ -12,7 +12,8 @@ class MyNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "Rouche"
+        
         // Do any additional setup after loading the view.
     }
 

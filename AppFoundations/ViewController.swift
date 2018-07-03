@@ -10,7 +10,10 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
     
-    
+  /*  @IBAction func reload(_ sender: Any) {
+        myTableView.reloadData()
+    }
+   */
     @IBOutlet weak var myTableView: UITableView!
     
    // var questions:[Question] = []
@@ -62,6 +65,9 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.topItem?.title = "Ruche"
+  //      self.navigationController?.navigationBar.a
+        
         if let savedQuestions = UsingDefaults.loadFromDefaults(key: "questions", objType: [Question].self) as? [Question]{
             questions = savedQuestions
         }
@@ -119,6 +125,10 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         myTableView.delegate = self
         myTableView.dataSource = self
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+       myTableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
