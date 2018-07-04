@@ -166,7 +166,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AppFoundations/ViewController.swift"
-            timestampString = "552401893.102666"
+            timestampString = "552408995.326129"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "99"
@@ -274,7 +274,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AppFoundations/NewAnswerViewController.swift"
-            timestampString = "552321836.753389"
+            timestampString = "552405926.0120831"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "20"
@@ -290,7 +290,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AppFoundations/NewAnswerViewController.swift"
-            timestampString = "552321836.753453"
+            timestampString = "552405926.012135"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "22"
@@ -306,7 +306,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AppFoundations/NewAnswerViewController.swift"
-            timestampString = "552321836.7535011"
+            timestampString = "552405926.012179"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1"
@@ -395,17 +395,251 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AppFoundations/ProfileViewController.swift"
-            timestampString = "552401893.103145"
+            timestampString = "552408995.326367"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
             landmarkName = "ProfileViewController"
             landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppFoundations.ProfileViewController.loggedUser.getter : AppFoundations.Profile"
+                  moduleName = "AppFoundations"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ghds/Documents/IOSProject/AppFoundations/ProfileViewController.swift"
+                  timestampString = "552407976.537655"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "105">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppFoundations.ProfileViewController.loggedUser.setter : AppFoundations.Profile"
+                  moduleName = "AppFoundations"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ghds/Documents/IOSProject/AppFoundations/ProfileViewController.swift"
+                  timestampString = "552407976.540836"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "110">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppFoundations.ProfileViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; AppFoundations.ProfileViewController"
+                  moduleName = "AppFoundations"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ghds/Documents/IOSProject/AppFoundations/ProfileViewController.swift"
+                  timestampString = "552407976.543892"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "46">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppFoundations.ProfileViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;AppFoundations.ProfileViewController&gt;"
+                  moduleName = "AppFoundations"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ghds/Documents/IOSProject/AppFoundations/ProfileViewController.swift"
+                  timestampString = "552407976.5465831"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "21">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AppFoundations/ProfileViewController.swift"
+            timestampString = "552408995.3267961"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AppFoundations/ProfileViewController.swift"
+            timestampString = "552408995.327052"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "ProfileViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppFoundations.ProfileViewController.loggedUser.getter : AppFoundations.Profile"
+                  moduleName = "AppFoundations"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ghds/Documents/IOSProject/AppFoundations/ProfileViewController.swift"
+                  timestampString = "552408836.966768"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "105">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppFoundations.ProfileViewController.loggedUser.setter : AppFoundations.Profile"
+                  moduleName = "AppFoundations"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ghds/Documents/IOSProject/AppFoundations/ProfileViewController.swift"
+                  timestampString = "552408836.970211"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "110">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppFoundations.ProfileViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; AppFoundations.ProfileViewController"
+                  moduleName = "AppFoundations"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ghds/Documents/IOSProject/AppFoundations/ProfileViewController.swift"
+                  timestampString = "552408836.9737951"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "46">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppFoundations.ProfileViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;AppFoundations.ProfileViewController&gt;"
+                  moduleName = "AppFoundations"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ghds/Documents/IOSProject/AppFoundations/ProfileViewController.swift"
+                  timestampString = "552408836.9783469"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "21">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AppFoundations/ProfileViewController.swift"
+            timestampString = "552408995.327281"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "ProfileViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppFoundations.ProfileViewController.imageView.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIImageView&gt;"
+                  moduleName = "AppFoundations"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ghds/Documents/IOSProject/AppFoundations/ProfileViewController.swift"
+                  timestampString = "552408836.990415"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "79">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppFoundations.ProfileViewController.imageView.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIImageView&gt;"
+                  moduleName = "AppFoundations"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ghds/Documents/IOSProject/AppFoundations/ProfileViewController.swift"
+                  timestampString = "552408836.9929481"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppFoundations.ProfileViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; AppFoundations.ProfileViewController"
+                  moduleName = "AppFoundations"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ghds/Documents/IOSProject/AppFoundations/ProfileViewController.swift"
+                  timestampString = "552408836.995734"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "635">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppFoundations.ProfileViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;AppFoundations.ProfileViewController&gt;"
+                  moduleName = "AppFoundations"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ghds/Documents/IOSProject/AppFoundations/ProfileViewController.swift"
+                  timestampString = "552408836.999319"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "583">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
