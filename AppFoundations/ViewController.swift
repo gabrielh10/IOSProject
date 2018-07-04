@@ -59,7 +59,11 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
  //   var comunities:[Comunity] = []
      var comunities:[Comunity] = [Comunity(id: 1, name: "Foundations"),
                                  Comunity(id: 2, name: "CIN"),
-                                 Comunity(id: 3, name: "UFPE")]
+                                 Comunity(id: 3, name: "UFPE"),
+                                 Comunity(id: 4, name: "MPF"),
+                                 Comunity(id: 5, name: "Tempest"),
+                                 Comunity(id: 6, name: "Manguezal"),
+                                 Comunity(id: 7, name: "Porto Digital")]
     
     var start = 0
    
@@ -79,10 +83,10 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         }
         
         
-        profiles = [Profile(id: 1, name: "Allan", knowledge: [knowledge[0], knowledge[1]]),
-                    Profile(id: 2, name: "César", knowledge: [knowledge[2], knowledge[4]]),
-                    Profile(id: 3, name: "Gabriel", knowledge: [knowledge[1], knowledge[3]]),
-                    Profile(id: 4, name: "Marina", knowledge: [knowledge[5], knowledge[0]])]
+        profiles = [Profile(id: 1, name: "Allan", company:"Foundations", place: "Recife", job:"CEO", knowledge: [knowledge[0], knowledge[1]]),
+                    Profile(id: 2, name: "César", company:"Foundations", place: "Recife", job:"CEO",  knowledge: [knowledge[2], knowledge[4]]),
+                    Profile(id: 3, name: "Gabriel", company:"Foundations", place: "Recife", job:"CEO",   knowledge: [knowledge[1], knowledge[3]]),
+                    Profile(id: 4, name: "Marina", company:"Foundations", place: "Recife", job:"CEO", knowledge: [knowledge[5], knowledge[0]])]
         
         profiles[0].addComunity(comunity: comunities[0])
         profiles[0].addComunity(comunity: comunities[1])
