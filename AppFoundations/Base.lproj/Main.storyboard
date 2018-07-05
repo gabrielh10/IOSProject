@@ -97,7 +97,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="607.20000000000005" y="-195.6521739130435"/>
+            <point key="canvasLocation" x="606" y="-152"/>
         </scene>
         <!--Answers View Controller-->
         <scene sceneID="Vjq-7B-WfT">
@@ -209,7 +209,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hY3-1c-Vtf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1463.2" y="-196.55172413793105"/>
+            <point key="canvasLocation" x="1588" y="-152"/>
         </scene>
         <!--Write Question View Controller-->
         <scene sceneID="FXg-Lz-GwP">
@@ -262,7 +262,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Oj-rx-leY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="607.20000000000005" y="592.35382308845578"/>
+            <point key="canvasLocation" x="607" y="662"/>
         </scene>
         <!--New Answer View Controller-->
         <scene sceneID="tUE-uo-Lb3">
@@ -329,7 +329,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NEd-tA-yCK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1463.2" y="592.35382308845578"/>
+            <point key="canvasLocation" x="1588" y="662"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="szk-2b-ury">
@@ -460,7 +460,7 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <viewLayoutGuide key="safeArea" id="55x-2H-Bs7"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="userY" selectedImage="userY" id="4of-Zf-6Od"/>
+                    <tabBarItem key="tabBarItem" title="" image="userY32" selectedImage="userY" id="4of-Zf-6Od"/>
                     <connections>
                         <outlet property="company" destination="k4O-Wr-wHP" id="1nR-fK-CSO"/>
                         <outlet property="imageView" destination="bXU-be-t1c" id="xEu-ym-K3V"/>
@@ -473,7 +473,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mer-tz-NhO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1007.2" y="603.14842578710648"/>
+            <point key="canvasLocation" x="-1962" y="-115"/>
         </scene>
         <!--Comunity View Controller-->
         <scene sceneID="7Hg-of-lka">
@@ -554,7 +554,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eCu-mG-qMp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="865" y="1331"/>
+            <point key="canvasLocation" x="-1962" y="662"/>
         </scene>
         <!--Comunities View Controller-->
         <scene sceneID="M20-rm-gwh">
@@ -639,7 +639,7 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="v0I-aQ-9dP"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="40" selectedImage="40" id="JJ6-u8-CRI" userLabel="Tab Bar Logo">
+                    <tabBarItem key="tabBarItem" title="" image="32" selectedImage="40" id="JJ6-u8-CRI" userLabel="Tab Bar Logo">
                         <color key="badgeColor" red="0.98366612200000003" green="0.86129409069999996" blue="0.66318064929999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
@@ -649,7 +649,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gbz-LL-8Bw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="1330.8845577211396"/>
+            <point key="canvasLocation" x="-1270" y="-114"/>
         </scene>
         <!--MyUI Tab Bar Controller-->
         <scene sceneID="oHP-12-0mE">
@@ -672,7 +672,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ugH-uX-ubj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-575" y="-392"/>
+            <point key="canvasLocation" x="-593" y="-955"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cXV-aj-KLq">
@@ -702,13 +702,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LuN-XC-4U1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="284" y="-954"/>
+            <point key="canvasLocation" x="607" y="-956"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="19r-Og-30B">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YXf-9Z-gOv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="writeW" selectedImage="writeY" id="9RF-Mc-vlK"/>
+                    <tabBarItem key="tabBarItem" title="" image="writeY32" selectedImage="writeY" id="9RF-Mc-vlK"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="K6h-yP-sL5">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -721,22 +721,24 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aFP-ax-rOW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-204" y="423"/>
+            <point key="canvasLocation" x="-594" y="-113"/>
         </scene>
     </scenes>
     <resources>
+        <image name="32" width="32" height="32"/>
         <image name="40" width="40" height="40"/>
         <image name="enviar_icon" width="128" height="146"/>
         <image name="homeY" width="50" height="50"/>
         <image name="lockY" width="2000" height="2000"/>
         <image name="userY" width="50" height="50"/>
+        <image name="userY32" width="32" height="32"/>
         <image name="voltar_icon" width="119" height="139"/>
-        <image name="writeW" width="50" height="51"/>
         <image name="writeY" width="50" height="51"/>
+        <image name="writeY32" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="g8T-dc-jeO"/>
-        <segue reference="f3f-6J-pCG"/>
+        <segue reference="ark-Xd-Gnr"/>
+        <segue reference="IfE-2y-gp3"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>
