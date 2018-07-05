@@ -70,7 +70,7 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.topItem?.title = "Ruche"
-  //      self.navigationController?.navigationBar.a
+     //   self.navigationController?.navigationBar.topItem?.
         
         if let savedQuestions = UsingDefaults.loadFromDefaults(key: "questions", objType: [Question].self) as? [Question]{
             questions = savedQuestions

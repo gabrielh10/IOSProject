@@ -22,6 +22,7 @@ class AnswersViewController: UIViewController, UITableViewDelegate, UITableViewD
    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.topItem?.title = "Ruche"
         //Adding questions to the singleton that represents a database
         
         if let savedAnswers = UsingDefaults.loadFromDefaults(key: "answers", objType: [Answer].self) as? [Answer]{
@@ -76,5 +77,8 @@ class AnswersViewController: UIViewController, UITableViewDelegate, UITableViewD
             newAnswerViewController.question1 = question.question
             newAnswerViewController.questionDetail1 = question.questionDetails
         }
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        answersTableView.reloadData()
     }
 }
