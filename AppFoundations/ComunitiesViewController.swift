@@ -10,8 +10,8 @@ import UIKit
 
 class ComunitiesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var comunities:[Comunity] = []
-    var comunitiesImages:[UIImage] = [UIImage(named:"manguezal")!, UIImage(named:"startuprio")!, UIImage(named:"startup_pe")!, UIImage(named:"sc")!, UIImage(named:"desafios_financeiros")!, UIImage(named:"cin")!, UIImage(named:"portodigital")!]
-    
+    var comunitiesImages:[UIImage] = [UIImage(named:"manguezal")!, UIImage(named:"startuprio")!, UIImage(named:"startup_pe")!, UIImage(named:"sc")!, UIImage(named:"desafios_financeiros")!, UIImage(named:"cin")!, UIImage(named:"marketing_digital")!]
+    var comunitiesDescript:[String] = ["Comunidade de startups do Mangue Recifense","Comunidade de startups do Rio de Janeiro","Comunidade de Startups de Pernambuco","Comunidade de Startups de Santa Catarina","Comunidade para CFOs","Comunidade de startups do CIn-UFPE","Comunidade de CMOs"]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return comunities.count
@@ -20,7 +20,7 @@ class ComunitiesViewController: UIViewController, UITableViewDelegate, UITableVi
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ComunityCell", for: indexPath) as! ComunitiesTableViewCell
         cell.comunityName.text = comunities[indexPath.row].name
-        cell.comunityDescription.text = "My Description"
+        cell.comunityDescription.text = comunitiesDescript[indexPath.row]
         cell.comunityImage.image = comunitiesImages[indexPath.row]
         cell.numberOfMembers.text = String(comunities[indexPath.row].quantity) + " Membros"
         cell.numberOfQuestions.text = "200"

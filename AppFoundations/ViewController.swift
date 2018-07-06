@@ -23,29 +23,29 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
                  Question(id: 3, question: "Como vocês escolhem um sócio pra começar uma startup? Ou trazer pra dentro da startup?", questionDetails: "Minha primeira startup se desfez porque eu e meu sócio tínhamos ideias muito diferentes de como atacar o mercado, o produto já tava pronto, conseguimos alguns c…"),
                  Question(id: 4, question: "Meu produto está pronto e rodando no cliente, mas ele pede muitas mudanças, devo focar em…", questionDetails: "Meu produto está pronto e rodando no cliente, mas ele pede muitas mudanças, devo focar em vender o que nós já temos pronto?"),
                  Question(id: 5, question: "Com quantos clientes se faz uma empresa de verdade?", questionDetails: "Meu saas já está rodando em três clientes, mas nenhum deles é pagante e já to a 6 meses buscando novos mas nada, será que cons…"),
-                 Question(id: 6, question: "6How i do something ?", questionDetails: "Consider that i already try... "),
-                 Question(id: 7, question: "7How i do something ?", questionDetails: "Consider that i already try... ")]
+                 Question(id: 6, question: "Como vocês avaliam desenvolvedores na hora da contratação?", questionDetails: "Estou precisando crescer o time de desenvolvimento e planejo contratar em torno de 20 devs nos próximos 3 meses. As startups que eu acompanho estão sempre com chamadas abertas, mas eu realmente preciso encher a casa rapidamente e da maneira mais acertada possível para evitar demissões! Alguém que já passou por isso pode me ajudar?"),
+                 Question(id: 7, question: "Onde vocês buscam conteúdo sobre empreendedorismo?", questionDetails: "Geralmente eu procuro no Google por materiais, mas queria indicações de livros, sites e newsletters para me manter atualizado no dia a dia.")]
  //   var answers:[Answer] = []
-    var answers:[Answer] = [Answer(id: 0, answer: "0You could do this and that....", score: 0, idQuestion: 1),
-                            Answer(id: 1, answer: "0You should do this and that....", score: 0, idQuestion: 1),
-                            Answer(id: 2, answer: "0You might do this and that....", score: 0, idQuestion: 1),
-                            Answer(id: 3, answer: "0You might do this and that....", score: 0, idQuestion: 1),
-                            Answer(id: 4, answer: "1You could do this and that....", score: 0, idQuestion: 2),
-                            Answer(id: 5, answer: "1You should do this and that....", score: 0, idQuestion: 2),
-                            Answer(id: 6, answer: "1You might do this and that....", score: 0, idQuestion: 2),
-                            Answer(id: 7, answer: "1You might do this and that....", score: 0, idQuestion: 2),
-                            Answer(id: 8, answer: "2You could do this and that....", score: 0, idQuestion: 3),
-                            Answer(id: 9, answer: "2You should do this and that....", score: 0, idQuestion: 3),
-                            Answer(id: 10, answer: "2You might do this and that....", score: 0, idQuestion: 3),
-                            Answer(id: 11, answer: "2You might do this and that....", score: 0, idQuestion: 3),
-                            Answer(id: 12, answer: "3You could do this and that....", score: 0, idQuestion: 4),
-                            Answer(id: 13, answer: "3You should do this and that....", score: 0, idQuestion: 4),
-                            Answer(id: 14, answer: "3You might do this and that....", score: 0, idQuestion: 4),
-                            Answer(id: 15, answer: "3You might do this and that....", score: 0, idQuestion: 5),
-                            Answer(id: 16, answer: "4You could do this and that....", score: 0, idQuestion: 5),
-                            Answer(id: 17, answer: "4You should do this and that....", score: 0, idQuestion: 6),
-                            Answer(id: 18, answer: "4You might do this and that....", score: 0, idQuestion: 6),
-                            Answer(id: 19, answer: "4You might do this and that....", score: 0, idQuestion: 6)]
+    var answers:[Answer] = [Answer(id: 0, answer: "You could do this and that....", score: 0, idQuestion: 1),
+                            Answer(id: 1, answer: "You should do this and that....", score: 0, idQuestion: 1),
+                            Answer(id: 2, answer: "You might do this and that....", score: 0, idQuestion: 1),
+                            Answer(id: 3, answer: "You might do this and that....", score: 0, idQuestion: 1),
+                            Answer(id: 4, answer: "As chamadas são por ciclo de aceleração, Fernando. A próxima chamada sai em outubro para as aceleradoras interessadas se inscreverem e depois de uns dois meses, abre a chamada para as startups.", score: 0, idQuestion: 2),
+                            Answer(id: 5, answer: "Fernando, as chamadas para startups saem no começo do próximo ano. Não sei como está o seu planejamento mas pode valer mais a pena pra ti procurar alguma aceleradora da sua região para não esperar tanto, tem vários programas parceiros surgindo com grandes empresas que pode fazer sentido pra você!", score: 0, idQuestion: 2),
+                            Answer(id: 6, answer: "O Startup Brasil tem um calendário bem certinho, entra nesse link que tem todos os detalhes: http://www.startupbrasil.org.br/sobre_programa/", score: 0, idQuestion: 2),
+                            Answer(id: 7, answer: "Tem um grupo no Facebook com o pessoal da organização que eles tão sempre mandando as novidades, agora vai sair muita coisa sobre a chamada atual, mas pelo menos tu não perde a chamada do próximo ano!", score: 0, idQuestion: 2),
+                            Answer(id: 8, answer: "You could do this and that....", score: 0, idQuestion: 3),
+                            Answer(id: 9, answer: "You should do this and that....", score: 0, idQuestion: 3),
+                            Answer(id: 10, answer: "You might do this and that....", score: 0, idQuestion: 3),
+                            Answer(id: 11, answer: "You might do this and that....", score: 0, idQuestion: 3),
+                            Answer(id: 12, answer: "You could do this and that....", score: 0, idQuestion: 4),
+                            Answer(id: 13, answer: "You should do this and that....", score: 0, idQuestion: 4),
+                            Answer(id: 14, answer: "You might do this and that....", score: 0, idQuestion: 4),
+                            Answer(id: 15, answer: "You might do this and that....", score: 0, idQuestion: 5),
+                            Answer(id: 16, answer: "You could do this and that....", score: 0, idQuestion: 5),
+                            Answer(id: 17, answer: "You should do this and that....", score: 0, idQuestion: 6),
+                            Answer(id: 18, answer: "You might do this and that....", score: 0, idQuestion: 6),
+                            Answer(id: 19, answer: "You might do this and that....", score: 0, idQuestion: 6)]
     
 //    var knowledge:[Knowledge] = []
      var knowledge:[Knowledge] = [Knowledge(id: 1, name: "Marketing"),
@@ -63,7 +63,7 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
                                  Comunity(id: 4, name: "Startup Summit"),
                                  Comunity(id: 5, name: "Desafios Financeiros"),
                                  Comunity(id: 6, name: "CIN"),
-                                 Comunity(id: 7, name: "Porto Digital")]
+                                 Comunity(id: 7, name: "Marketing Digital")]
     
     
     var start = 0
@@ -73,10 +73,10 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         self.navigationController?.navigationBar.topItem?.title = "Ruche"
      //   self.navigationController?.navigationBar.topItem?.
         
-        if let savedQuestions = UsingDefaults.loadFromDefaults(key: "questions", objType: [Question].self) as? [Question]{
+    /*    if let savedQuestions = UsingDefaults.loadFromDefaults(key: "questions", objType: [Question].self) as? [Question]{
             questions = savedQuestions
         }
- 
+ */
         if Questions.shared.count == 0{
             for question in questions{
                 Questions.shared.add(question: question)
@@ -111,10 +111,10 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         }
         UsingDefaults.saveToDefaults(key: "knowledge", obj: knowledge)
         
-/*        if let savedComunities = UsingDefaults.loadFromDefaults(key: "comunities", objType: [Comunity].self) as? [Comunity]{
+        if let savedComunities = UsingDefaults.loadFromDefaults(key: "comunities", objType: [Comunity].self) as? [Comunity]{
             comunities = savedComunities
         }
-  */      UsingDefaults.saveToDefaults(key: "comunities", obj: comunities)
+        UsingDefaults.saveToDefaults(key: "comunities", obj: comunities)
         
         if let savedProfiles = UsingDefaults.loadFromDefaults(key: "profiles", objType: [Profile].self) as? [Profile]{
             profiles = savedProfiles
