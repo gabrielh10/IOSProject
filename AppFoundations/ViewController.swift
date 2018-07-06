@@ -18,11 +18,11 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
     
    // var questions:[Question] = []
     
-     var questions:[Question]  = [Question(id: 1, question: "1How i do something ?", questionDetails: "Consider that i already try doing this like... "),
-                 Question(id: 2, question: "2How i do something ?", questionDetails: "Consider that i already try... "),
-                 Question(id: 3, question: "3How i do something ?", questionDetails: "Consider that i already try... "),
-                 Question(id: 4, question: "4How i do something ?", questionDetails: "Consider that i already try... "),
-                 Question(id: 5, question: "5How i do something ?", questionDetails: "Consider that i already try... "),
+     var questions:[Question]  = [Question(id: 1, question: "Alguém que já participou do Startup Chile pode me ajudar com a proposta do programa?", questionDetails: "Nós somos a GostoFacil, temos uma solução para quem quer comer comida saudável no trabalho, vendemos para as empresas que querem melhorar a qualidade da alimen…"),
+                 Question(id: 2, question: "Alguém sabe quando sai a próxima chamada do Startup Brasil?", questionDetails: "Estou aguardando a nova chamada desde o ano passado, acho que a última foi em outubro. Vocês sabem qual é a frequência dos editais?"),
+                 Question(id: 3, question: "Como vocês escolhem um sócio pra começar uma startup? Ou trazer pra dentro da startup?", questionDetails: "Minha primeira startup se desfez porque eu e meu sócio tínhamos ideias muito diferentes de como atacar o mercado, o produto já tava pronto, conseguimos alguns c…"),
+                 Question(id: 4, question: "Meu produto está pronto e rodando no cliente, mas ele pede muitas mudanças, devo focar em…", questionDetails: "Meu produto está pronto e rodando no cliente, mas ele pede muitas mudanças, devo focar em vender o que nós já temos pronto?"),
+                 Question(id: 5, question: "Com quantos clientes se faz uma empresa de verdade?", questionDetails: "Meu saas já está rodando em três clientes, mas nenhum deles é pagante e já to a 6 meses buscando novos mas nada, será que cons…"),
                  Question(id: 6, question: "6How i do something ?", questionDetails: "Consider that i already try... "),
                  Question(id: 7, question: "7How i do something ?", questionDetails: "Consider that i already try... ")]
  //   var answers:[Answer] = []
@@ -120,12 +120,12 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         }
         UsingDefaults.saveToDefaults(key: "profiles", obj: profiles)
         
-/*        var loggedUser:Profile = profiles[0]
+        var loggedUser:Profile = profiles[0]
         if let savedUser = UsingDefaults.loadFromDefaults(key: "loggedUser", objType: Profile.self) as? Profile{
             loggedUser = savedUser
         }
         UsingDefaults.saveToDefaults(key: "loggedUser", obj: loggedUser)
-  */
+ 
         myTableView.delegate = self
         myTableView.dataSource = self
         // Do any additional setup after loading the view, typically from a nib.
