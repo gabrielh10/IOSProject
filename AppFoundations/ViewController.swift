@@ -57,13 +57,14 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
     
      var profiles:[Profile] = []
  //   var comunities:[Comunity] = []
-     var comunities:[Comunity] = [Comunity(id: 1, name: "Foundations"),
-                                 Comunity(id: 2, name: "CIN"),
-                                 Comunity(id: 3, name: "UFPE"),
-                                 Comunity(id: 4, name: "MPF"),
-                                 Comunity(id: 5, name: "Tempest"),
-                                 Comunity(id: 6, name: "Manguezal"),
+     var comunities:[Comunity] = [Comunity(id: 1, name: "Manguezal"),
+                                 Comunity(id: 2, name: "Startup-RJ"),
+                                 Comunity(id: 3, name: "Startup-PE"),
+                                 Comunity(id: 4, name: "Startup Summit"),
+                                 Comunity(id: 5, name: "Desafios Financeiros"),
+                                 Comunity(id: 6, name: "CIN"),
                                  Comunity(id: 7, name: "Porto Digital")]
+    
     
     var start = 0
    
@@ -75,7 +76,7 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         if let savedQuestions = UsingDefaults.loadFromDefaults(key: "questions", objType: [Question].self) as? [Question]{
             questions = savedQuestions
         }
-        
+ 
         if Questions.shared.count == 0{
             for question in questions{
                 Questions.shared.add(question: question)
@@ -110,10 +111,10 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         }
         UsingDefaults.saveToDefaults(key: "knowledge", obj: knowledge)
         
-        if let savedComunities = UsingDefaults.loadFromDefaults(key: "comunities", objType: [Comunity].self) as? [Comunity]{
+/*        if let savedComunities = UsingDefaults.loadFromDefaults(key: "comunities", objType: [Comunity].self) as? [Comunity]{
             comunities = savedComunities
         }
-        UsingDefaults.saveToDefaults(key: "comunities", obj: comunities)
+  */      UsingDefaults.saveToDefaults(key: "comunities", obj: comunities)
         
         if let savedProfiles = UsingDefaults.loadFromDefaults(key: "profiles", objType: [Profile].self) as? [Profile]{
             profiles = savedProfiles

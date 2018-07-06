@@ -10,6 +10,7 @@ import UIKit
 
 class ComunitiesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var comunities:[Comunity] = []
+    var comunitiesImages:[UIImage] = [UIImage(named:"manguezal")!, UIImage(named:"startuprio")!, UIImage(named:"startup_pe")!, UIImage(named:"sc")!, UIImage(named:"desafios_financeiros")!, UIImage(named:"cin")!, UIImage(named:"portodigital")!]
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -20,9 +21,10 @@ class ComunitiesViewController: UIViewController, UITableViewDelegate, UITableVi
         let cell = tableView.dequeueReusableCell(withIdentifier: "ComunityCell", for: indexPath) as! ComunitiesTableViewCell
         cell.comunityName.text = comunities[indexPath.row].name
         cell.comunityDescription.text = "My Description"
-      //  cell.comunityImage.= "Comunity Image"
+        cell.comunityImage.image = comunitiesImages[indexPath.row]
         cell.numberOfMembers.text = String(comunities[indexPath.row].quantity) + " Membros"
         cell.numberOfQuestions.text = "200"
+      //  cell.comunityImage.image = 
         
         return cell
     }

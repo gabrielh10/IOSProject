@@ -29,10 +29,10 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         var profiles:[Profile] = []
        
         
-        if let savedProfiles = UsingDefaults.loadFromDefaults(key: "profiles", objType: [Profile].self) as? [Profile]{
+  /*      if let savedProfiles = UsingDefaults.loadFromDefaults(key: "profiles", objType: [Profile].self) as? [Profile]{
             profiles = savedProfiles
         }
- 
+ */
         if let savedUser = UsingDefaults.loadFromDefaults(key: "loggedUser", objType: Profile.self) as? Profile{
             loggedUser = savedUser
             print("äqui")
